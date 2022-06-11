@@ -17,7 +17,7 @@ module Counter =
         
     let getBitmapFromWasi w h degrees =
         use engine = new Engine()
-        use ``module`` = Module.FromFile(engine, "fable_raytracer_bg.wasm")
+        use ``module`` = Module.FromFile(engine, "FableRustRaytracer/pkg/fable_raytracer_bg.wasm")
         use linker = new Linker(engine)
         use store = new Store(engine)
         linker.DefineWasi()
