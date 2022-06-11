@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WasiFableRaytracerFSharpAvalonia", "WasiFableRaytracerFSharpAvalonia\WasiFableRaytracerFSharpAvalonia.fsproj", "{68AD5B34-A01B-4FFF-9DB9-E5A4D02B8891}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FableRustRaytracer", "FableRustRaytracer\FableRustRaytracer.fsproj", "{75051DB5-6463-4222-BC60-EBE5098B3B1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{68AD5B34-A01B-4FFF-9DB9-E5A4D02B8891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68AD5B34-A01B-4FFF-9DB9-E5A4D02B8891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68AD5B34-A01B-4FFF-9DB9-E5A4D02B8891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75051DB5-6463-4222-BC60-EBE5098B3B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75051DB5-6463-4222-BC60-EBE5098B3B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75051DB5-6463-4222-BC60-EBE5098B3B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75051DB5-6463-4222-BC60-EBE5098B3B1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

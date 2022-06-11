@@ -490,3 +490,5 @@ Temporary Items
 .apdisk
 
 .idea/
+
+FableRustRaytracer/*.rs

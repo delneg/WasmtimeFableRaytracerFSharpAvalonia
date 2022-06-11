@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <RestoreAdditionalProjectSources Condition="$(RunNativeAot) == True">
+            https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-experimental/nuget/v3/index.json;
+            $(RestoreAdditionalProjectSources)
+        </RestoreAdditionalProjectSources>
+        <IlcDisableReflection>true</IlcDisableReflection>
+        <IlcOptimizationPreference>Speed</IlcOptimizationPreference>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Platform.fs" />
+        <Compile Include="RayTracer.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="7.0.0-*" Condition="$(RunNativeAot) == True" />
+        <PackageReference Include="Fable.Core.Experimental" Version="4.0.0-*" />
+    </ItemGroup>
+
+</Project>
